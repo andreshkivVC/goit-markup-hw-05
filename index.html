@@ -27,7 +27,7 @@
 				<nav class="header-nav">
 					<ul class="header-list-nav list">
 						<li class="item">
-							<a href="" class="header-item link header-item-current"> Студія</a>
+							<a href="" class="header-item link header-item-current current"> Студія</a>
 						</li>
 						<li class="item"><a href="./portfolio.html" class="header-item link"> Портфоліо</a></li>
 						<li class="item"><a href="" class="header-item link"> Контакти</a></li>
@@ -60,7 +60,7 @@
 						Ефективні рішення для <br />
 						вашого бізнесу
 					</h1>
-					<button type="button" class="essential-btn">Замовити послугу</button>
+					<button type="button" class="essential-btn" data-modal-open >Замовити послугу</button>
 				</div>
 			</section>
 			<section class="section">
@@ -119,13 +119,22 @@
 					<h2 class="foto-work">Чим ми займаємося</h2>
 					<ul class="foto-list list">
 						<li class="foto-item">
+							<div class="foto-bottom">
 							<img src="./images/box1.jpg" alt="box1" width="370" />
+							<p class="work-lister">Десктопні додатки</p>
+						</div>
 						</li>
 						<li class="foto-item">
+							<div class="foto-bottom">
 							<img src="./images/box2.jpg" alt="box2" width="370" />
+							<p class="work-lister">Мобільні додатки</p>
+						</div>
 						</li>
 						<li class="foto-item">
+							<div class="foto-bottom">
 							<img src="./images/box3.jpg" alt="box3" width="370" />
+							<p class="work-lister">Дизайнерські рішення</p>
+						</div>
 						</li>
 					</ul>
 				</div>
@@ -395,10 +404,15 @@
 				</div>
 			</div>
 		</footer>
-		<!-- <div class="backdrop">
-			<div class="modal"> 
-				<button type="button" [data-modal-close]>X</button>
+		<div class="backdrop is-hidden" data-modal >
+			<div class="modal">
+				<button type="button" class="btn-modal" data-modal-close>
+						<svg class="modal-icon" width="11" , height="11">
+						<use href="./images/icons.svg#icon-Vector"></use>
+					</svg>
+				</button>
 			</div>
-		</div> -->
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
